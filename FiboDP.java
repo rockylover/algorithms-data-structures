@@ -1,7 +1,12 @@
 public class Main {
+	// find nth number in the fibonacci series
+	// one of the most basic problems of recursion
+	// normal solution is very time consuming, thus
+	// dynamic programming comes to rescue
 	public static void main(String[] args) {
 		int n = 45;
 		System.out.println(fibo(n));
+		// we use a helper array of size n to reduce time complexity
 		int[] helper = new int[n];
 		System.out.println(fiboDP(n, helper));
 	}
